@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using TaskManger.Data;
 
@@ -21,8 +21,7 @@ builder.Services.AddDbContext<TaskDb>(options =>
 var jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettingsSection["SecretKey"];
 
-// Swagger + Auth + CORS (same as before…)
-
+// CORS
 var MyCorsPolicy = "_myCorsPolicy";
 builder.Services.AddCors(options =>
 {
@@ -39,31 +38,29 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Auth
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-        {
-            ValidateIssuer = false,
-            ValidateAudience = false,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey =
-                new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
-                    System.Text.Encoding.UTF8.GetBytes(secretKey)
-                )
-        };
+        options.TokenValidationParameters =
+            new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+            {
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey =
+                    new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
+                        System.Text.Encoding.UTF8.GetBytes(secretKey)
+                    )
+            };
     });
 
-// ⭐ BUILD APP HERE
+// ⭐ Build app
 var app = builder.Build();
 
-// ⭐ CREATE TABLES (AFTER build, BEFORE middleware)
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<TaskDb>();
-    db.Database.EnsureCreated();
-}
+// ❌ DO NOT CALL EnsureCreated() on Railway
+// EF migrations will handle schema
 
 // Middleware
 app.UseSwagger();
