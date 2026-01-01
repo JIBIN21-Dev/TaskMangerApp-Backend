@@ -15,6 +15,12 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 var connection = builder.Configuration.GetConnectionString("TasksDatabase");
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<TaskDb>();
+    db.Database.EnsureCreated();
+}
+
 
 builder.Services.AddDbContext<TaskDb>(options =>
     options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
