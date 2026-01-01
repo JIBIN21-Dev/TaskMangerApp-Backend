@@ -14,9 +14,11 @@ builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<TaskDb>(option => {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("TasksDatabase"));
-});
+var connection = builder.Configuration.GetConnectionString("TasksDatabase");
+
+builder.Services.AddDbContext<TaskDb>(options =>
+    options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
+
 
 var jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettingsSection["SecretKey"];
