@@ -4,56 +4,24 @@ using TaskManger.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ============================================
-// FIX 1: Configure to listen on 0.0.0.0 for Railway
-// ============================================
+// Listen on Railway port
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
-// Add services to the container.
+// Services
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
+// ⭐ DB CONFIG
 var connection = builder.Configuration.GetConnectionString("TasksDatabase");
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<TaskDb>();
-    db.Database.EnsureCreated();
-}
-
 
 builder.Services.AddDbContext<TaskDb>(options =>
     options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
-
 var jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettingsSection["SecretKey"];
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-    {
-        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Name = "Authorization",
-        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
-        Scheme = "Bearer",
-        Description = "Enter: Bearer <your JWT token>"
-    });
-    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
-    {
-        {
-            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-            {
-                Reference = new Microsoft.OpenApi.Models.OpenApiReference
-                {
-                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
-});
+// Swagger + Auth + CORS (same as before…)
 
 var MyCorsPolicy = "_myCorsPolicy";
 builder.Services.AddCors(options =>
@@ -80,24 +48,27 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secretKey))
+            IssuerSigningKey =
+                new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
+                    System.Text.Encoding.UTF8.GetBytes(secretKey)
+                )
         };
     });
 
+// ⭐ BUILD APP HERE
 var app = builder.Build();
 
-// ============================================
-// FIX 2: Enable Swagger in Production for Railway
-// ============================================
+// ⭐ CREATE TABLES (AFTER build, BEFORE middleware)
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<TaskDb>();
+    db.Database.EnsureCreated();
+}
+
+// Middleware
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// ============================================
-// FIX 3: Removed HTTPS redirection (Railway handles this)
-// ============================================
-// app.UseHttpsRedirection();  // Railway handles HTTPS at proxy level
-
-// CORRECT ORDER
 app.UseCors(MyCorsPolicy);
 app.UseRouting();
 app.UseAuthentication();
