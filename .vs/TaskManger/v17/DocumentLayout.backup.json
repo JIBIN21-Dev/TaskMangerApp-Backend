@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\data\\taskdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:data\\taskdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\taskmanger.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:taskmanger.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\models\\taskname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:models\\taskname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\taskmanger.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:taskmanger.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -19,43 +51,14 @@
       "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\taskmanger.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:taskmanger.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\models\\taskname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:models\\taskname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\data\\taskdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:data\\taskdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jitzm\\source\\repos\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|c:\\users\\jitzm\\desktop\\project 1\\taskmanger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{000E7809-8D8B-4F41-91C8-65A132ADBF7D}|TaskManger.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jitzm\\source\\repos\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,11 +68,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 25,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -82,20 +85,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-31T10:27:45.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -108,31 +111,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Controllers\\TaskController.cs",
               "RelativeToolTip": "Controllers\\TaskController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwCEBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T15:05:00.423Z"
+              "WhenOpened": "2025-12-28T15:05:00.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "ValuesController.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Controllers\\ValuesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ValuesController.cs",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Controllers\\ValuesController.cs",
               "RelativeToolTip": "Controllers\\ValuesController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAUwHMAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwGwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T08:08:37.391Z"
+              "WhenOpened": "2025-12-28T08:08:37.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "TaskManger.http",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\TaskManger.http",
               "RelativeDocumentMoniker": "TaskManger.http",
@@ -145,92 +150,96 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SQLQuery1.sql",
+              "DocumentIndex": 13,
+              "Title": "SQLQuery1.sql ",
               "DocumentMoniker": "C:\\Users\\jitzm\\source\\repos\\SQLQuery1.sql",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\SQLQuery1.sql",
-              "ToolTip": "C:\\Users\\jitzm\\source\\repos\\SQLQuery1.sql",
-              "RelativeToolTip": "..\\..\\..\\source\\repos\\SQLQuery1.sql",
+              "ToolTip": "SQLQuery1.sql ",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-12-28T07:25:30.863Z"
+              "WhenOpened": "2025-12-28T07:25:30.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-28T07:24:15.618Z"
+              "WhenOpened": "2025-12-28T07:24:15.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "TaskDb.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Data\\TaskDb.cs",
               "RelativeDocumentMoniker": "Data\\TaskDb.cs",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Data\\TaskDb.cs",
               "RelativeToolTip": "Data\\TaskDb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T07:22:52.088Z"
+              "WhenOpened": "2025-12-28T07:22:52.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "TaskName.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Models\\TaskName.cs",
               "RelativeDocumentMoniker": "Models\\TaskName.cs",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Models\\TaskName.cs",
               "RelativeToolTip": "Models\\TaskName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T07:18:19.963Z"
+              "WhenOpened": "2025-12-28T07:18:19.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Models\\Users.cs",
               "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T07:16:25.997Z"
+              "WhenOpened": "2025-12-28T07:16:25.997Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TaskManger.csproj",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\TaskManger.csproj",
               "RelativeDocumentMoniker": "TaskManger.csproj",
               "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\TaskManger.csproj",
               "RelativeToolTip": "TaskManger.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-28T07:16:00.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-28T07:14:56.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\jitzm\\Desktop\\Project 1\\TaskManger\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -240,6 +249,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-28T07:14:38.3Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 185,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

@@ -1,16 +1,17 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using TaskManger.Data;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
+// ============================================
+// FIX 1: Configure to listen on 0.0.0.0 for Railway
+// ============================================
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-
-
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<TaskDb>(option => {
@@ -30,7 +31,6 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         Description = "Enter: Bearer <your JWT token>"
     });
-
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
@@ -48,22 +48,20 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var MyCorsPolicy = "_myCorsPolicy";
-
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: MyCorsPolicy, policy =>
+    options.AddPolicy(MyCorsPolicy, policy =>
     {
-        policy.WithOrigins(
-            "http://localhost:4200",  
-            "https://localhost:4200"
-        )
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials();
+        policy
+            .WithOrigins(
+                "http://localhost:4200",
+                "https://taskmangerapp-frontend-production.up.railway.app"
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
     });
 });
-
-
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -78,23 +76,24 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-
 var app = builder.Build();
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
-app.UseHttpsRedirection();
+// ============================================
+// FIX 2: Enable Swagger in Production for Railway
+// ============================================
+app.UseSwagger();
+app.UseSwaggerUI();
 
+// ============================================
+// FIX 3: Removed HTTPS redirection (Railway handles this)
+// ============================================
+// app.UseHttpsRedirection();  // Railway handles HTTPS at proxy level
+
+// CORRECT ORDER
 app.UseCors(MyCorsPolicy);
-
-
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
