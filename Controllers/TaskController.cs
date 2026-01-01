@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
@@ -34,11 +34,12 @@ namespace TaskManger.Controllers
             public bool? IsCompleted { get; set; }
         }
 
+        // ✅ FIXED: Returns ALL tasks for everyone (no user filtering)
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAllTasks([FromQuery] string filter = "all")
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-            var query = _context.TaskNames.Where(t => t.UserId == userId);
+            var query = _context.TaskNames.AsQueryable();
 
             if (filter == "pending")
             {
@@ -58,7 +59,8 @@ namespace TaskManger.Controllers
                     t.Description,
                     t.DueDate,
                     t.IsCompleted,
-                    t.CreatedAt
+                    t.CreatedAt,
+                    t.UserId
                 })
                 .ToListAsync();
 
@@ -70,13 +72,13 @@ namespace TaskManger.Controllers
             });
         }
 
+        // ✅ FIXED: Returns any task by ID (no user check)
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetTask(int id)
         {
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-
             var task = await _context.TaskNames
-                .Where(t => t.Id == id && t.UserId == userId)
+                .Where(t => t.Id == id)
                 .Select(t => new
                 {
                     t.Id,
@@ -84,7 +86,8 @@ namespace TaskManger.Controllers
                     t.Description,
                     t.DueDate,
                     t.IsCompleted,
-                    t.CreatedAt
+                    t.CreatedAt,
+                    t.UserId
                 })
                 .FirstOrDefaultAsync();
 
@@ -267,12 +270,11 @@ namespace TaskManger.Controllers
 
             var pendingTasks = totalTasks - completedTasks;
 
-            // ✅ FIXED: Added .Value to t.DueDate
             var overdueTasks = await _context.TaskNames
                 .CountAsync(t => t.UserId == userId &&
                                !t.IsCompleted &&
                                t.DueDate.HasValue &&
-                               t.DueDate.Value < DateTime.Now);  // ← FIXED HERE!
+                               t.DueDate.Value < DateTime.Now);
 
             return Ok(new
             {
